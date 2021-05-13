@@ -11,5 +11,5 @@ if(numA==0){
        
 }else{
     x=-numB/numA;
-    alert("x co nghiem la: ",x);
+    alert("x co nghiem la: " +x);
 }
