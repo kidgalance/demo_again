@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border: 2px blue;
+        }
+        p{
+            color: blue;
+        }
+        h3{
+            width: fit-content;
+            background-color: red;
+            color: white;
+        }
+        .content{
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .main-bd{
+            float:left;
+            padding-left: 600px;
+        }
+        .name{
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .email{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-bd">
+        <form method="get" action="">
+            
+            <h3 style="padding: 10px;">Sở thích của bạn</h3>
+            <div class="name">
+                <p style="float: left;">Họ và tên</p>        
+                <input type="text" name="yourname" style="float: left; margin: 15px 0 0 15px;" >
+            </div>
+            <div class="email"><br>
+                <p >Email</p>        
+                <input type="text" name="email" style="float: left; margin: 15px 0 0 15px;">
+            </div>    
+            
+            <p>Sở thích</p>
+            <input type="checkbox" name="hobby">Thể thao
+            <input type="checkbox" name="hobby">Âm nhạc
+            <input type="checkbox" name="hobby">Đọc sách <br>
+            <input type="checkbox" name="hobby">Lướt web
+            <input type="checkbox" name="hobby">Chơi game
+            <input type="checkbox" name="hobby">Điện ảnh <br>
+            <input type="checkbox" name="hobby">Du lịch <br>
+            <input type="submit" value="Gửi thông tin">
+            <input type="reset" value="Nhập lại">
+        </form>
+    </div>
+</body>
+</html>
