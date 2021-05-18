@@ -6,4 +6,4 @@ tienLai = tienVay * (laiSuat/100);
 gocLai = tienVay + (namVay*tienLai);
 document.write("So tien lai la: "+tienLai);
 
-document.write("So tien sau "+namVay+"ca goc lan lai la: "+gocLai+"trieu VND");
+document.write("So tien sau " +namVay+ "ca goc lan lai la: " +gocLai+ "trieu VND");
