@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Amount</td>
+            <td>From Currentcy</td>
+            <td>To Currentcy</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="amount"></td>
+            <td><select id="from_current">
+                <option value="1">USD</option>
+                <option value="23000">VND</option>
+                <option value="107.3">Yen</option>
+                <option value="0.5">Rub</option>
+            </select></td>
+            <td><select id="to_current">
+                <option value="1">USD</option>
+                <option value="23000">VND</option>
+                <option value="107.3">Yen</option>
+                <option value="0.5">Rub</option>
+            </select></td>
+            <td><button onclick="convertMoney()" style="color: white; background-color: blueviolet;">Convert</button></td>
+        </tr>
+    </table>
+    <h4 id="result"></h4>
+    <script src="convert.js"></script>
+</body>
+</html>
