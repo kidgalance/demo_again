@@ -36,12 +36,10 @@ function factN(){
 //tinh mu
 function powValue(){
     let input = document.getElementById('output').value || document.getElementById('resut').value;
-    let powNumber = document.getElementById('powNum').value;
-
-    Value = Math.pow(input, powNumber);
-    document.getElementById('output').value = Value;
-
-    
-
-  
+   // let setOutput = new setOutput();
+    //output = document.getElementById('')
+    //let powNum = document.getElementById('output').value || document.getElementById('result').value;
+    //result = Math.pow(input,powNum);\
+    result = (input**)
+    document.getElementById();
 }

@@ -18,16 +18,26 @@
             width: 400px;
             padding:20px;
             border: 1px solid burlywood;
-
+            background: #ccc;
+            border-radius: 5px;
         }
         input{
             width:97.8%;
             height:60px;
             text-align: right;
         }
+        .operator{
+            color: #fff;
+            background: #ffcc00;
+        }
+        h1{
+            font-family: 'Courier New', Courier, monospace;
+            color: #ffcc00;
+        }
     </style>
 </head>
 <body>
+    <h1>Calculator</h1>
     <table>
         <tr>
             <td colspan="5">
@@ -38,34 +48,34 @@
             <td><button onclick="setOutput(7)">7</button></td>
             <td><button onclick="setOutput(8)">8</button></td>
             <td><button onclick="setOutput(9)">9</button></td>
-            <td><button onclick="setOutput('+')">+</button></td>
-            <td><button onclick="factN()">n!</button></td>
+            <td><button onclick="setOutput('+')" class="operator">+</button></td>
+            <td><button onclick="factN()" class="operator">n!</button></td>
         </tr>
         <tr>
             <td><button onclick="setOutput(4)">4</button></td>
             <td><button onclick="setOutput(5)">5</button></td>
             <td><button onclick="setOutput(6)">6</button></td>
-            <td><button onclick="setOutput('-')">-</button></td>
-            <td><button onclick="powValue()" id="powNum">^</button></td>
+            <td><button onclick="setOutput('-')" class="operator">-</button></td>
+            <td><button onclick="setOutput('^');powValue();" id="powNum" class="operator">^</button></td>
         </tr>
         <tr>
             <td><button onclick="setOutput(1)">1</button></td>
             <td><button onclick="setOutput(2)" >2</button></td>
             <td><button onclick="setOutput(3)">3</button></td>
-            <td><button onclick="setOutput('*')">*</button></td>
+            <td><button onclick="setOutput('*')" class="operator">*</button></td>
         </tr>
         <tr>
-            <td><button onclick="setOutput('.')" value=".">.</button></td>
-            <td><button onclick="setOutput(0)" value="0">0</button></td>
-            <td><button onclick="calculator()">=</button></td>
-            <td><button onclick="setOutput('/')">/</button></td>
+            <td><button onclick="setOutput('.')" value="." class="operator">.</button></td>
+            <td><button onclick="setOutput(0)" value="0" class="operator">0</button></td>
+            <td><button onclick="calculator()" class="operator">=</button></td>
+            <td><button onclick="setOutput('/')" class="operator">/</button></td>
            
         </tr>
         <tr>
-            <td><button onclick="rsBtn();" id="reset">C</button></td>
-            <td><button onclick="deleteStr()"><=</button></td>
-            <td><button onclick="setOutput('(')">(</button></td>
-            <td><button onclick="setOutput(')')">)</button></td>
+            <td><button onclick="rsBtn();" id="reset" class="operator">C</button></td>
+            <td><button onclick="deleteStr()" class="operator"><=</button></td>
+            <td><button onclick="setOutput('(')" class="operator">(</button></td>
+            <td><button onclick="setOutput(')')" class="operator">)</button></td>
         </tr>
     </table>
     <script src="cal.js"></script>
