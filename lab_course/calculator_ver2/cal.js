@@ -1,4 +1,9 @@
+let check = false;
 function setOutput(number){
+    if(check == true){
+        document.getElementById('output').value = '';
+    }
+    check == false;
     document.getElementById('output').value += number;
 }
 function calculator(){
@@ -9,6 +14,7 @@ function calculator(){
     
 
     document.getElementById('output').value = result;
+    check = true;
 }
 function rsBtn(){
     document.getElementById('output').value = "";
@@ -36,10 +42,5 @@ function factN(){
 //tinh mu
 function powValue(){
     let input = document.getElementById('output').value || document.getElementById('resut').value;
-   // let setOutput = new setOutput();
-    //output = document.getElementById('')
-    //let powNum = document.getElementById('output').value || document.getElementById('result').value;
-    //result = Math.pow(input,powNum);\
-    result = (input**)
-    document.getElementById();
+    
 }
