@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+        
+            position: relative;
+        }
+        table{
+            
+            position: inherit;
+            width: 500px;
+        
+        }
+        button{
+            width: auto;
+        }
+  
+        
+    </style>
+</head>
+<body>
+    <h1 style="text-align: left;">Bảng tính giá điện sinh hoạt</h1>
+    <table style="text-align: left;">
+        <tr>
+            <td>Tổng số điện tiêu thụ (kWh)</td>
+            <td>Đơn giá</td>
+            <td>Thành tiền</td>
+        </tr>
+        <tr>
+            <td><input type="text" id="elec"></td>
+            <td><input type="text" value="xxx" id="price" readonly></td>
+            <td><button onclick="add()">Tính tiền</td>
+        </tr>
+        <tr>
+            <td colspan="2">Giá tiền</td>
+            <td><p id="result"></p></td>
+        </tr>
+        <tr>
+            <td colspan="2">Tiền thuế VAT 10%</td>
+            <td><p id="tax"></p></td>
+        </tr>
+        <tr>
+            <td colspan="2">Tổng hóa đơn tiền điện</td>
+            <td><p id="total"></p></td>
+        </tr>
+    </table>
+    <script src="app.js"></script>
+</body>
+</html>
