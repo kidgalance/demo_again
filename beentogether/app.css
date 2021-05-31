@@ -21,3 +21,9 @@ table{
 .progress_color{
     background-color: bg-danger;
 }
+table ,tr,td{
+    padding-bottom: 20px;
+}
+input{
+    border-radius: 10px;
+}

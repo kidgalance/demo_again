@@ -27,7 +27,16 @@ function progress(){
     mod = timeLove % 1000;
     fNumber = timeLove - mod+1;
     sNumber = timeLove - mod+1000;
-    document.getElementById('fNumber').innerHTML = +fNumber;
-    document.getElementById('sNumber').innerHTML = +sNumber;
+    document.getElementById('fNumber').innerHTML = +fNumber + " ";
+    document.getElementById('sNumber').innerHTML = " " + +sNumber;
     document.getElementById('progress').value = mod;
+    
+    function makeProgress(){
+        if(mod<1000){
+            mod = mod + 1;
+            $(".progress-bar").css("width" + mod + "%").text(mod + " %");
+            setTimeout("makeProgress",100);
+        }
+        makeProgress();
+    }
 }
