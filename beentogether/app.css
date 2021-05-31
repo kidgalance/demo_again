@@ -1,0 +1,23 @@
+table{
+    margin: auto;
+    width: 900px;
+    border: 2px solid plum;
+    background-image: url(23287.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    vertical-align: middle;
+}
+#fNumber{
+    text-align: right;
+}
+#sNumber{
+    text-align: left;
+}
+.text {
+    color: rgb(12, 12, 12);
+
+}
+.progress_color{
+    background-color: bg-danger;
+}
