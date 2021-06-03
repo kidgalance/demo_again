@@ -1,5 +1,5 @@
 function checkDay() {
-    alert("Bói toán chỉ là 1 hình thức bói tóan. Bói thì bói mà không bói thì bói");
+   
     let maleBorn = document.getElementById('maleBorn').value;
     let femaleBorn = document.getElementById('femaleBorn').value;
 
